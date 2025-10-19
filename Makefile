@@ -4,3 +4,7 @@ bin/testListArray: testListArray.cpp ListArray.h List.h
 
 clean:
 	rm -r *.o *.gch bin
+bin/testNode: testNode.cpp Node.h
+	mkdir -p bin
+	g++ -std=gnu++17 -Wall -Wextra -O2 -o bin/testNode testNode.cpp
+
